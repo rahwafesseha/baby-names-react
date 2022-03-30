@@ -21,7 +21,7 @@ function filterNames(input) {
 
 function App() {
   
-  const [input, setInput] = useState("");
+  const [input] = useState("");
   const [arrayOfNames, setArrayOfNames] = useState(names);
   return (
     <div className="App">
