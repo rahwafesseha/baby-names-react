@@ -26,11 +26,10 @@ function App() {
   return (
     <div className="App">
       <h1>Baby <span className="name">Name</span> Picker</h1>
-      <input type="text"
+      <input className="input" type="text" placeholder="Search here..."
         onChange={(event) => {
           setArrayOfNames(filterNames(event.target.value));
-        }}
-      ></input>{input}
+        }}></input>{input}
       <div className="App-body">
        <RenderNames names={arrayOfNames} />
       </div>
