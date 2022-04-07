@@ -1,6 +1,5 @@
-.App h1{
+h1{
   font-family: fantasy;
- 
   text-align: center;
   font-size: 35px;
 
@@ -22,6 +21,17 @@
   border: 4px solid linear-gradient(to right, darkblue, darkorchid) border-box;
 
 }
+.App p{
+  font-size: 2rem;
+  text-align: start;
+}
+.App{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
 .App-body p{
 padding: 15px;
 
