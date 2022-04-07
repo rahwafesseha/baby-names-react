@@ -11,9 +11,7 @@ function filterNames(input) {
 }
 
 function App() {
-  
-  const [input] = useState("");
-  const [arrayOfNames, setArrayOfNames] = useState(names);
+   const [arrayOfNames, setArrayOfNames] = useState(names);
   const[favoriteNames, setFavoriteNames]=useState([]);
  
   return (
