@@ -10,15 +10,22 @@ function filterNames(input) {
   );
 }
 
+
+
 function App() {
    const [arrayOfNames, setArrayOfNames] = useState(names);
   const[favoriteNames, setFavoriteNames]=useState([]);
+
+  function filterGender(input) {
+    return names.filter((value) =>value.sex.toLowerCase()===input);
+  }
  
   return (
     <div>
       <h1>
         Baby <span className="name">Name</span> Picker
       </h1>
+
       <input
         className="input"
         type="text"
@@ -27,7 +34,19 @@ function App() {
           setArrayOfNames(filterNames(event.target.value));
         }}
       ></input>
-  
+      <button className="all" onClick={(e)=>{
+        e.preventDefault();
+      setArrayOfNames(names);
+      }}>All</button>
+      <button className="female" onClick={(e)=>{
+        e.preventDefault();
+      setArrayOfNames(filterGender("f"))}}>
+        Female
+      </button>
+      <button className="male" onClick={(e)=>{
+        e.preventDefault();
+      setArrayOfNames(filterGender("m"))}}>Male</button>
+
       <Favorites
         favoriteNames={favoriteNames}
         setFavoriteNames={setFavoriteNames}

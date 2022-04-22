@@ -48,11 +48,7 @@ padding: 15px;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -68,15 +64,28 @@ padding: 15px;
 .App-link {
   color: #61dafb;
 }
-.f{
+.f, .female{
   background-color: pink;
   font-size: 20px;
  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
-.m{
+.m, .male{
   font-size: 20px;
   background-color: rgb(110, 163, 231);
+}
+.all,.female, .male{
+ 
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#010000;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
 }
 
 
